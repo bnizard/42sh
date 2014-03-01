@@ -6,7 +6,7 @@
 #    By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/02/28 14:29:38 by eseveno           #+#    #+#              #
-#    Updated: 2014/02/28 15:20:59 by eseveno          ###   ########.fr        #
+#    Updated: 2014/03/01 17:17:40 by eseveno          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -21,7 +21,8 @@ SRC		=	42sh.c \
 			ft_putstr.c \
 			ft_strtrim.c \
 			ft_strncmp.c \
-			ft_strlen.c
+			ft_strlen.c \
+			ft_strsplit.c
 
 OBJ		=	$(SRC:.c=.o)
 
