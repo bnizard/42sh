@@ -6,7 +6,7 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/26 18:32:25 by eseveno           #+#    #+#             */
-/*   Updated: 2014/02/28 14:53:11 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/03/01 17:07:18 by bdismuke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,9 @@ void    ft_read(t_info *my);
  *				libft/
  */
 int     ft_strlen(char *s);
-char    *ft_strtrim(char *s);
+char    *ft_cust_strtrim(char const *s);
+int		ft_isspace(char c);
+char	*ft_strsub(char const *s, unsigned int start, size_t len);
 int 	ft_strncmp(const char *s1, const char *s2, size_t n);
 void    ft_putstr(char *s);
 void    ft_putendl(char *s);
