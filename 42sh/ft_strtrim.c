@@ -6,7 +6,7 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/28 17:56:00 by eseveno           #+#    #+#             */
-/*   Updated: 2014/03/01 16:59:02 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/03/01 17:04:41 by bdismuke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_cust_strtrim(char const *s)
 {
-	unsigned	int		begin;
-	unsigned	int		end;
+	unsigned int		begin;
+	unsigned int		end;
 	char				*trimmed;
 
 	if (s == NULL)
@@ -30,12 +30,32 @@ char	*ft_cust_strtrim(char const *s)
 	return (trimmed);
 }
 
-
-int	ft_isspace(char c)
+int		ft_isspace(char c)
 {
 	if (c == '\t' || c == '\n' || c == '\f' || c == '\r' || c == '\v'
 		|| c == ' ')
 		return (1);
 	else
 		return (0);
+}
+
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
+{
+	char			*allocation;
+	unsigned int	i;
+	unsigned int	j;
+
+	i = start;
+		j = 0;
+	allocation = malloc(sizeof(*allocation) * (len + 1));
+	if (allocation == NULL || s == NULL)
+		return (NULL);
+	while (i < (start + len) && s[i] != '\0')
+	{
+		allocation[j] = s[i];
+		i++;
+		j++;
+	}
+	allocation[j] = '\0';
+	return (allocation);
 }
