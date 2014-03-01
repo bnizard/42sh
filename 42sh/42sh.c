@@ -6,26 +6,11 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/26 14:34:46 by eseveno           #+#    #+#             */
-/*   Updated: 2014/02/27 19:19:49 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/02/28 14:29:15 by eseveno          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "42sh.h"
-
-int		ft_strlen(char *s)
-{
-	int i;
-	
-	i = 0;
-	while (s[i])
-		i++;
-	return (i);
-}
-
-void	ft_putstr(char *s)
-{
-	write(1, s, ft_strlen(s));
-}
 
 void	ft_read(t_info *my)
 {
@@ -34,7 +19,6 @@ void	ft_read(t_info *my)
 		return ;
 	if (my->ret >= 1)
 		my->buf[my->ret - 1] = '\0';
-	ft_putstr(my->buf);
 	return ;
 }
 
