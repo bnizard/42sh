@@ -6,7 +6,7 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/21 15:52:46 by eseveno           #+#    #+#             */
-/*   Updated: 2014/02/28 15:11:38 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/03/01 18:21:21 by bdismuke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,6 @@ int			ft_strncmp(const char *s1, const char *s2, size_t n)
 		else if (s1[i] > s2[i])
 			return (1);
 		i++;
-    }
-    return (0);
+	}
+	return (0);
 }

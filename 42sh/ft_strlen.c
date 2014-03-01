@@ -6,13 +6,13 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2013/11/19 11:27:26 by eseveno           #+#    #+#             */
-/*   Updated: 2014/02/28 15:11:15 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/03/01 18:20:49 by bdismuke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "42sh.h"
 
-int		 	ft_strlen(char *str)
+int			ft_strlen(char *str)
 {
 	int		i;
 

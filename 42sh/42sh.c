@@ -6,7 +6,7 @@
 /*   By: eseveno <eseveno@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/02/26 14:34:46 by eseveno           #+#    #+#             */
-/*   Updated: 2014/03/01 18:10:36 by eseveno          ###   ########.fr       */
+/*   Updated: 2014/03/01 18:18:19 by bdismuke         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_read(t_info *my)
 {
-	int i;
+	int	i;
 
 	my->buf = (char*)malloc(sizeof(char) * BUFF_SIZE);
 	i = 0;
@@ -30,10 +30,10 @@ void	ft_read(t_info *my)
 }
 
 
-char    *ft_complete(char *env)
+char	*ft_complete(char *env)
 {
-	char    *dest;
-	int     i;
+	char	*dest;
+	int		i;
 
 	i = 0;
 	if (!(dest = (char*)malloc(sizeof(char) * (ft_strlen(env + 1)))))
@@ -49,7 +49,7 @@ char    *ft_complete(char *env)
 
 void	ft_copyenv(t_info *my, char **env)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (env[i])
@@ -72,7 +72,7 @@ void	ft_freebuf(t_info *my)
 
 void	ft_freearg(t_info *my)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (my->arg[i])
@@ -89,9 +89,9 @@ void	ft_freeall(t_info *my)
 	ft_freebuf(my);
 }
 
-void ft_debug(t_info *my)
+void	ft_debug(t_info *my)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	ft_putendl(my->buf);
@@ -104,7 +104,7 @@ void	ft_init(t_info *my, char **env)
 
 int		main(int argc, char **argv, char **env)
 {
-	t_info my;
+	t_info	my;
 
 	(void)argc;
 	(void)argv;
