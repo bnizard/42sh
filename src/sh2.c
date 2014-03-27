@@ -66,8 +66,9 @@ int		ft_read(t_info *my, char ***env)
 	int		i;
 
 	i = 0;
-	if (ft_read2(my) != 3)
-		return (ft_read2(my));
+	if ((i = ft_read2(my)) != 3)
+		return (i);
+	i = 0;
 	free(my->buf);
 	my->buf = NULL;
 	my->arg = ft_strsplit(my->realbuf, ';');
